@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"pefile/pe"
+	"github.com/angelystor/pefile"
 )
 
 func main() {
@@ -49,14 +49,15 @@ func main() {
 			} else {
 				funcname = string(imp.Name)
 			}
-			log.Println(funcname)
+			log.Printf("%s -> %s", entry.Dll, funcname)
 		}
 	}
 
 	log.Println("\nDIRECTORY_ENTRY_EXPORT\n")
 	log.Println(pefile.ExportDirectory)
-	for _, entry := range pefile.ExportDirectory.Exports {
-		log.Println(string(entry.Name))
+	if pefile.ExportDirectory != nil {
+		for _, entry := range pefile.ExportDirectory.Exports {
+			log.Println(string(entry.Name))
+		}
 	}
-
 }
