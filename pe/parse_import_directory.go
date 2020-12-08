@@ -5,8 +5,8 @@ package pe
 import (
 	"errors"
 	"fmt"
+	"github.com/angelystor/pefile/lib"
 	"log"
-	"pefile/lib"
 	"reflect"
 
 )

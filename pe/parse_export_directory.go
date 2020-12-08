@@ -3,7 +3,7 @@ package pe
 import (
 	"errors"
 	"fmt"
-	"pefile/lib"
+	"github.com/angelystor/pefile/lib"
 
 	//"reflect"
 	"log"

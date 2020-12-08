@@ -7,12 +7,12 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
+	"github.com/angelystor/pefile/lib"
 	"log"
 	"os"
 	"sort"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"pefile/lib"
 )
 
 /* The representation of the PEFile with some helpful abstractions */

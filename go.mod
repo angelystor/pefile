@@ -1,4 +1,4 @@
-module pefile
+module github.com/angelystor/pefile
 
 go 1.15
 

@@ -1,10 +1,9 @@
 package main
 
 import (
+	"github.com/angelystor/pefile/pe"
 	"log"
 	"os"
-
-	"github.com/angelystor/pefile"
 )
 
 func main() {
